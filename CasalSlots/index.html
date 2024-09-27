@@ -1231,7 +1231,7 @@
         // Inicia o cronômetro de atualização
         function startUpdateTimer() {
             let lastUpdateTime = getCurrentTime();
-            let timeLeft = 5;
+            let timeLeft = 120;
 
             setInterval(() => {
                 let minutes = Math.floor(timeLeft / 60) % 60;
@@ -1242,7 +1242,7 @@
                     `<p>Próxima atualização em: ${formatTimeUnit(minutes)}:${formatTimeUnit(seconds)}</p>`
                 if (timeLeft-- == 0) {
                     lastUpdateTime = getCurrentTime();
-                    timeLeft = 5;
+                    timeLeft = 119;
                     updateProgressBars();
                 }
             }, 1000);
