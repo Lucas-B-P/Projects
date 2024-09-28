@@ -1,3 +1,50 @@
+let segundos = 0;
+
+//ORDENAR OS CARDS DO MAIOR PARA O MENOR
+
+function loop(){
+
+        segundos ++;
+
+        let intervalo = setTimeout(loop, 1000);
+
+        const gamesGrid = document.querySelector('.games-grid');
+        const gameCards = Array.from(document.querySelectorAll('.game-card'));
+        
+        //console.log('Games Grid:', gamesGrid); // Verifique se o elemento .games-grid existe
+        //console.log('Game Cards:', gameCards); // Verifique se os cards estão sendo encontrados
+        
+        // Função para extrair a porcentagem de distribuição de cada card
+        const getDistribuicao = (card) => {
+            const distribText = card.querySelector('p span.progress-text')?.textContent || '';
+            //console.log('Distribuição encontrada:', distribText); // Log para verificar se a porcentagem foi encontrada corretamente
+            return parseFloat(distribText.replace('%', '')) || 0; // Remove o '%' e converte para número, garantindo retorno 0 caso não encontre
+        };
+        
+        // Ordena os game cards com base na maior porcentagem de distribuição
+        const sortedCards = gameCards.sort((a, b) => {
+            return getDistribuicao(b) - getDistribuicao(a);
+        });
+        
+        // Limpa o grid e adiciona os cards ordenados
+        gamesGrid.innerHTML = '';
+        sortedCards.forEach(card => {
+            gamesGrid.appendChild(card);
+        });
+        
+        if(segundos >= 4){
+
+            //console.clear();
+
+            clearTimeout(loop);
+            console.log("Limpando intervalo!");
+            
+        }
+        //console.log('Cards ordenados e adicionados ao grid');
+
+    }
+    loop();
+
 // Função para formatar a unidade de tempo com dois dígitos
 function formatTimeUnit(unit) {
     return unit < 10 ? `0${unit}` : unit;
