@@ -7,10 +7,23 @@
 }
 
 body {
-  background-image: -webkit-linear-gradient(1);
   color: white;
   text-align: center;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-image: url(img/background/arquitetura-futurista-de-cassino.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: bottom;
 }
+
+/* @media screen and (max-width: 600px){
+  body{
+    background-size: 100% 100%;
+  }
+} */
 
 header {
   background-image: -o-linear-gradient(1);
@@ -444,7 +457,7 @@ header {
   background: linear-gradient(180deg, #000 0, #0015ff 100%);
   color: #fff;
   border-radius: 45px 45px 0 0;
-  padding: 50px 30px 90px
+  padding: 50px 30px 90px;
 }
 
 .disclaimer h2 {
@@ -455,7 +468,6 @@ header {
 .disclaimer p {
   white-space: pre-line
 }
-
 
 @media screen and (max-width: 364px) {
   .games-grid {
@@ -468,4 +480,3 @@ header {
     padding: 2px;
   }
 }
-
