@@ -1,0 +1,137 @@
+@-webkit-keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+
+  @-webkit-keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+
+  @-webkit-keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+  }
+  
+
+  @keyframes rgbBorderAnimation {
+    0% {
+      border-color: rgb(255, 0, 0);
+      /* Vermelho */
+    }
+  
+    33% {
+      border-color: rgb(0, 255, 0);
+      /* Verde */
+    }
+  
+    66% {
+      border-color: rgb(0, 0, 255);
+      /* Azul */
+    }
+  
+    100% {
+      border-color: rgb(255, 0, 0);
+      /* Volta ao vermelho */
+    }
+  }
+  
+  @keyframes corInput {
+    0% {
+      color: rgb(255, 0, 0);
+    }
+  
+    33% {
+      color: rgb(0, 255, 0);
+    }
+  
+    66% {
+      color: rgb(0, 0, 255);
+    }
+  
+    100% {
+      color: rgb(255, 0, 0);
+    }
+  }
+  
+
+  @-webkit-keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
